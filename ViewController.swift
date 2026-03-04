@@ -47,6 +47,14 @@ class ViewController: UIViewController {
             label.widthAnchor.constraint(equalToConstant: 240),
             label.heightAnchor.constraint(equalToConstant: 60)
         ])
+
+        // Show an alert to confirm viewDidAppear is executed (very visible)
+        let alert = UIAlertController(title: "Debug", message: "ViewController did appear", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+        // present alert async to avoid presentation warnings
+        DispatchQueue.main.async {
+            self.present(alert, animated: true, completion: nil)
+        }
     }
 
     func setupUI() {
