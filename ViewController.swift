@@ -2,6 +2,7 @@
 import UIKit
 import AVFoundation
 import AVKit
+import os
 
 class ViewController: UIViewController {
     let playButton = UIButton(type: .system)
@@ -20,6 +21,32 @@ class ViewController: UIViewController {
 
         setupUI()
         queueManager.delegate = self
+    }
+
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        // Debug: visible confirmation
+        print("ViewController: viewDidAppear called")
+        os_log("ViewController appeared", log: OSLog.default, type: .debug)
+
+        // Add a large on-screen label so it's obvious the VC loaded
+        let label = UILabel()
+        label.translatesAutoresizingMaskIntoConstraints = false
+        label.text = "VC LOADED"
+        label.textAlignment = .center
+        label.textColor = .white
+        label.backgroundColor = .systemBlue
+        label.font = UIFont.systemFont(ofSize: 28, weight: .semibold)
+        label.layer.cornerRadius = 8
+        label.layer.masksToBounds = true
+        view.addSubview(label)
+
+        NSLayoutConstraint.activate([
+            label.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            label.centerYAnchor.constraint(equalTo: view.centerYAnchor),
+            label.widthAnchor.constraint(equalToConstant: 240),
+            label.heightAnchor.constraint(equalToConstant: 60)
+        ])
     }
 
     func setupUI() {
