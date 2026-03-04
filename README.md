@@ -27,6 +27,11 @@ Test steps
 
 Notes
 - This is a sample skeleton for functional testing. For production, handle errors, edge cases, secure network access, and comply with media source TOS.
+- The provided project is for testing and learning. Do not ship this code as-is to production.
 
 Sample test media URL
 - https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4
+
+Changelog
+- 2026-03-04: Initial demo project added and pushed to repository by assistant.
+- 2026-03-04: README updated with usage notes and changelog entry.
