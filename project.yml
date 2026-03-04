@@ -1,6 +1,6 @@
 name: KaratubeDemo
 options:
-  bundleIdPrefix: com.babysharksbot
+  bundleIdPrefix: com.sharkherb
 configs:
   Debug: debug
   Release: release
@@ -17,4 +17,4 @@ targets:
           - ios_demo_player.xcodeproj
           - project.yml
     settings:
-      PRODUCT_BUNDLE_IDENTIFIER: com.babysharksbot.karatube
+      PRODUCT_BUNDLE_IDENTIFIER: com.sharkherb.karatube
