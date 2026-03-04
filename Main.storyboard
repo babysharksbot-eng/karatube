@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Minimal storyboard placeholder: UI is built programmatically in ViewController -->
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard" version="3.0" toolsVersion="17122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatching="YES">
+  <scenes>
+    <!-- Empty storyboard; ViewController is constructed in SceneDelegate -->
+  </scenes>
+</document>

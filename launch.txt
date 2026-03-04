@@ -1,0 +1,6 @@
+Project ready. To run:
+1) Open Xcode and create a new App project (iOS). Replace AppDelegate.swift, SceneDelegate.swift, ViewController.swift, QueueManager.swift, Info.plist, Main.storyboard with the files from this folder.
+2) In Xcode: Signing & Capabilities -> add Background Modes -> check 'Audio, AirPlay and Picture in Picture'.
+3) Build and run on a physical device. Tap Play to start sample video. Use AirPlay button (top-right) to route to Apple TV.
+
+If you want, I can create a .zip of this folder for download or send files directly to your Telegram. Which do you prefer?
