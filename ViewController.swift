@@ -13,6 +13,8 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        // Debug: confirm viewDidLoad called
+        print("ViewController: viewDidLoad called")
         view.backgroundColor = UIColor.systemBackground
         title = "Karaoke Demo"
 
