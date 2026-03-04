@@ -1,0 +1,20 @@
+name: KaratubeDemo
+options:
+  bundleIdPrefix: com.babysharksbot
+configs:
+  Debug: debug
+  Release: release
+settings:
+  INFOPLIST_FILE: Info.plist
+targets:
+  KaratubeDemo:
+    type: application
+    platform: iOS
+    deploymentTarget: "16.0"
+    sources:
+      - path: .
+        excludes:
+          - ios_demo_player.xcodeproj
+          - project.yml
+    settings:
+      PRODUCT_BUNDLE_IDENTIFIER: com.babysharksbot.karatube
